@@ -18,10 +18,6 @@ body {
   flex: 1;
 }
 
-.footer {
-  height: 100%;
-}
-
 .header {
   height: 843px;
   display: flex;
@@ -93,9 +89,18 @@ body {
   height: 10px;
   border-radius: 50%;
   outline: 0;
+  transition: 1.5s;
+}
+.circleBtnsWrapper__btn:hover {
+  transition: 1.5s;
+  background-color: #333333;
 }
 .circleBtnsWrapper__btn:nth-child(1) {
   margin-top: 0;
+}
+
+.activeCircleBtn {
+  background-color: #333333;
 }
 
 .checkDomainForm {
@@ -163,9 +168,76 @@ body {
   margin-top: 138px;
 }
 
+.jinoDomains {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 27px;
+}
+.jinoDomains__jino {
+  font-family: "PT Sans Caption", sans-serif;
+  color: #b22725;
+}
+.jinoDomains__domains {
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+}
+
 .advantages {
-  margin: 0 auto;
   display: flex;
+  height: 843px;
+}
+.advantages__register {
+  margin-top: 63px;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+.advantages__section {
+  margin-top: 47px;
+}
+.advantages__list {
+  display: flex;
+}
+.advantages__list_article {
+  width: 242.6666666667px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.jinoColor {
+  color: #ffffff;
+}
+
+.whyJino {
+  display: flex;
+  height: 843px;
+  background: url("../img/background2.jpg");
+}
+.whyJino__why {
+  margin-top: 62px;
+  margin-bottom: 98px;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+.whyJino__reliable {
+  color: #ffffff;
+  font-family: "PT Sans - Caption Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+.whyJino__loyalty {
+  height: 110px;
+  width: 1092px;
+  border-radius: 5px;
+  background-color: #df4a5e;
+  margin-top: 52px;
+  margin-bottom: 52px;
 }
 
 /*# sourceMappingURL=style.css.map */
