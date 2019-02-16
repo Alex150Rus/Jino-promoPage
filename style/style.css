@@ -79,13 +79,13 @@ body {
   margin-top: 120px;
 }
 
-.headerCircleBtnsWrapper {
+.circleBtnsWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 29px;
 }
-.headerCircleBtnsWrapper__btn {
+.circleBtnsWrapper__btn {
   margin-top: 36px;
   border: 1px solid #333333;
   background-color: #ffffff;
@@ -94,13 +94,8 @@ body {
   border-radius: 50%;
   outline: 0;
 }
-.headerCircleBtnsWrapper__btn:nth-child(1) {
+.circleBtnsWrapper__btn:nth-child(1) {
   margin-top: 0;
-}
-
-.advantages {
-  margin: 0 auto;
-  display: flex;
 }
 
 .checkDomainForm {
@@ -162,6 +157,15 @@ body {
   font-size: 24px;
   font-weight: 700;
   padding: 12px;
+}
+
+.arrowBtn {
+  margin-top: 138px;
+}
+
+.advantages {
+  margin: 0 auto;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
