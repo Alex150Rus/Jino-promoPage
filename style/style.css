@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ body {
 }
 
 .header {
-  height: 843px;
+  height: 100vh;
   display: flex;
   background: url("../img/background1.jpg");
   background-size: cover;
@@ -43,12 +44,17 @@ body {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
+  display: flex;
 }
 .headerDomains__left_jino {
-  font-family: "PT Sans Caption", sans-serif;
+  width: 65px;
+  height: 13px;
+  margin-right: 7px;
 }
 .headerDomains__left_domains {
   font-family: "PT Sans", sans-serif;
+  height: 13px;
+  line-height: 13px;
 }
 .headerDomains__right {
   width: 611.52px;
@@ -91,16 +97,15 @@ body {
   outline: 0;
   transition: 1.5s;
 }
+.circleBtnsWrapper__btn_activeCircleBtn {
+  background-color: #333333;
+}
 .circleBtnsWrapper__btn:hover {
   transition: 1.5s;
   background-color: #333333;
 }
 .circleBtnsWrapper__btn:nth-child(1) {
   margin-top: 0;
-}
-
-.activeCircleBtn {
-  background-color: #333333;
 }
 
 .checkDomainForm {
@@ -144,6 +149,25 @@ body {
   position: absolute;
   bottom: -40px;
   z-index: -1;
+  text-align: center;
+  line-height: 51px;
+}
+.checkDomainForm__result_textWrapper {
+  margin-top: 5px;
+}
+.checkDomainForm__result_firstPhrase {
+  color: #f4f7fb;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.checkDomainForm__result_secondPhrase {
+  width: 354px;
+  height: 30px;
+  color: #77b53c;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .createAccountBtn {
@@ -173,19 +197,25 @@ body {
   font-size: 16px;
   font-weight: 700;
   margin-top: 27px;
+  display: flex;
 }
 .jinoDomains__jino {
-  font-family: "PT Sans Caption", sans-serif;
-  color: #b22725;
+  width: 65px;
+  height: 13px;
+  margin-right: 7px;
 }
 .jinoDomains__domains {
-  font-family: "PT Sans", sans-serif;
-  color: #333333;
+  font-family: PT Sans, sans-serif;
+  height: 13px;
+  line-height: 13px;
+}
+.jinoDomains__domains_color {
+  color: #ffffff;
 }
 
 .advantages {
   display: flex;
-  height: 843px;
+  height: 100vh;
 }
 .advantages__register {
   margin-top: 63px;
@@ -205,14 +235,20 @@ body {
   text-align: center;
   margin-top: 35px;
 }
-
-.jinoColor {
-  color: #ffffff;
+.advantages__list_link {
+  text-decoration: none;
+}
+.advantages__list_text {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 12px;
 }
 
 .whyJino {
   display: flex;
-  height: 843px;
+  height: 100vh;
   background: url("../img/background2.jpg");
 }
 .whyJino__why {
@@ -225,11 +261,12 @@ body {
 }
 .whyJino__reliable {
   color: #ffffff;
-  font-family: "PT Sans - Caption Bold", sans-serif;
+  font-family: "PT Sans - Caption", sans-serif;
   font-size: 50px;
   font-weight: 400;
   line-height: 60px;
   margin-bottom: 15px;
+  text-align: center;
 }
 .whyJino__loyalty {
   height: 110px;
@@ -238,6 +275,96 @@ body {
   background-color: #df4a5e;
   margin-top: 52px;
   margin-bottom: 52px;
+  display: flex;
+  align-items: center;
 }
+.whyJino__loyalty_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 851.76px;
+}
+.whyJino__loyalty_middle {
+  width: 2px;
+  height: 70px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+.whyJino__loyalty_right {
+  width: 240.24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loyaltyPointsText {
+  padding-left: 39px;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+.loyaltyPointsText__underline {
+  text-decoration: underline;
+}
+
+.loyaltyPoints {
+  color: #ffffff;
+  font-family: "PT Sans - Caption", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  padding-left: 39px;
+}
+.loyaltyPoints__plusImage {
+  width: 28px;
+  height: 28px;
+  padding-left: 10px;
+}
+
+.iconsInfo {
+  background-color: #f7f7f7;
+  border: 1px solid rgba(95, 96, 98, 0.5);
+  border-radius: 15px;
+  margin-top: 15px;
+  position: relative;
+}
+.iconsInfo__text {
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 27px 40px;
+}
+
+.iconsInfo::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: -6px;
+  left: 110px;
+  background-color: #f7f7f7;
+  border-top: 1px solid rgba(95, 96, 98, 0.5);
+  border-left: 1px solid rgba(95, 96, 98, 0.5);
+  transform: rotate(45deg);
+}
+
+.createAccountBtnMarginsWhyJinoSection {
+  margin-top: 45px;
+}
+
+footer {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Text style for "Джино, Пра" */
+ *
+ * text-decoration: underline; */
 
 /*# sourceMappingURL=style.css.map */

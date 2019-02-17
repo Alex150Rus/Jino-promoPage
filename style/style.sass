@@ -20,7 +20,7 @@ body
   flex: 1
 
 .header
-  height: 843px
+  height: $height
   display: flex
   background: url("../img/background1.jpg")
   background-size: cover
@@ -42,11 +42,15 @@ body
     color: #ffffff
     font-size: 16px
     font-weight: 700
+    display: flex
     &_jino
-      font-family: "PT Sans Caption", sans-serif
+      width: 65px
+      height: 13px
+      margin-right: 7px
     &_domains
-      font-family: "PT Sans", sans-serif
-
+      font-family: 'PT Sans', sans-serif
+      height: 13px
+      line-height: 13px
   &__right
     width: $width*0.56
     color: #ffffff
@@ -83,14 +87,13 @@ body
     border-radius: 50%
     outline: 0
     transition: 1.5s
+    &_activeCircleBtn
+      background-color: #333333
   &__btn:hover
     transition: 1.5s
     background-color: #333333
   &__btn:nth-child(1)
     margin-top: 0
-
-.activeCircleBtn
-  background-color: #333333
 
 .checkDomainForm
   margin-top: 65px
@@ -130,6 +133,22 @@ body
     position: absolute
     bottom: -40px
     z-index: -1
+    text-align: center
+    line-height: 51px
+    &_textWrapper
+      margin-top: 5px
+    &_firstPhrase
+      color: #f4f7fb
+      font-family: 'PT Sans', sans-serif
+      font-size: 16px
+      font-weight: 400
+    &_secondPhrase
+      width: 354px
+      height: 30px
+      color: #77b53c
+      font-family: 'PT Sans', sans-serif
+      font-size: 16px
+      font-weight: 400
 
 .createAccountBtn
   width: 274px
@@ -155,16 +174,21 @@ body
   font-size: 16px
   font-weight: 700
   margin-top: 27px
+  display: flex
   &__jino
-    font-family: "PT Sans Caption", sans-serif
-    color: #b22725
+    width: 65px
+    height: 13px
+    margin-right: 7px
   &__domains
-    font-family: "PT Sans", sans-serif
-    color: #333333
+    font-family: PT Sans, sans-serif
+    height: 13px
+    line-height: 13px
+    &_color
+      color: #ffffff
 
 .advantages
   display: flex
-  height: 843px
+  height: $height
   &__register
     margin-top: 63px
     color: #333333
@@ -179,16 +203,18 @@ body
       width: $width/4.5
       text-align: center
       margin-top: 35px
-
-footer
-
-
-.jinoColor
-  color: #ffffff
+    &_link
+      text-decoration: none
+    &_text
+      color: #333333
+      font-family: 'PT Sans', sans-serif
+      font-size: 20px
+      font-weight: 400
+      margin-top: 12px
 
 .whyJino
   display: flex
-  height: 843px
+  height: $height
   background: url("../img/background2.jpg")
   &__why
     margin-top: 62px
@@ -199,11 +225,12 @@ footer
     font-weight: 700
   &__reliable
     color: #ffffff
-    font-family: 'PT Sans - Caption Bold', sans-serif
+    font-family: 'PT Sans - Caption', sans-serif
     font-size: 50px
     font-weight: 400
     line-height: 60px
     margin-bottom: 15px
+    text-align: center
   &__loyalty
     height: 110px
     width: $width
@@ -211,6 +238,89 @@ footer
     background-color: #df4a5e
     margin-top: 52px
     margin-bottom: 52px
+    display: flex
+    align-items: center
+    &_left
+      display: flex
+      flex-direction: column
+      justify-content: center
+      width: 0.78*$width
+    &_middle
+      width: 2px
+      height: 70px
+      background-color: #ffffff
+      opacity: 0.2
+    &_right
+      width: 0.22*$width
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+
+.loyaltyPointsText
+  padding-left: 39px
+  color: #ffffff
+  font-family: 'PT Sans', sans-serif
+  font-size: 22px
+  font-weight: 400
+  &__underline
+    text-decoration: underline
+
+.loyaltyPoints
+  color: #ffffff
+  font-family: 'PT Sans - Caption', sans-serif
+  font-size: 50px
+  font-weight: 400
+  letter-spacing: 2.5px
+  padding-left: 39px
+  &__plusImage
+    width: 28px
+    height: 28px
+    padding-left: 10px
+
+.iconsInfo
+  background-color: #f7f7f7
+  border: 1px solid rgba(95, 96, 98, 0.5)
+  border-radius: 15px
+  margin-top: 15px
+  position: relative
+  &__text
+    color: #333333
+    font-family: 'PT Sans', sans-serif
+    font-size: 16px
+    font-weight: 400
+    padding: 27px 40px
+
+.iconsInfo::before
+  position: absolute
+  content: ""
+  display: block
+  width: 10px
+  height: 10px
+  top: -6px
+  left: 110px
+  background-color: #f7f7f7
+  border-top: 1px solid rgba(95, 96, 98, 0.5)
+  border-left: 1px solid rgba(95, 96, 98, 0.5)
+  transform: rotate(45deg)
+
+.createAccountBtnMarginsWhyJinoSection
+  margin-top: 45px
+
+footer
+  opacity: 0.5
+  color: #ffffff
+  font-family: 'PT Sans', sans-serif
+  font-size: 14px
+  font-weight: 400
+/* Text style for "Джино, Пра" */
+  text-decoration: underline;
+
+
+
+
+
+
 
 
 
