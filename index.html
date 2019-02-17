@@ -9,15 +9,15 @@
 <body>
 <div class="wrapper">
   <div class="content">
-    <header class="header">
+    <header id ="jinoDomains" class="header">
       <div class="container">
         <div class="headerDomains">
           <div class="headerDomains__left">
-            <span class="headerDomains__left_jino">ДЖИНО</span>
-            <span class="headerDomains__left_domains">домены</span>
+            <div><img class="headerDomains__left_jino" src="img/JinoWhite.png" alt="JinoLogoWhite"></div>
+            <div class="headerDomains__left_domains">домены</div>
           </div>
           <span class="headerDomains__right">
-              <span class="headerDomains__right_only">Только до</span> 31 января
+              <span class="headerDomains__right_only">Только до 31 января</span>
             </span>
         </div>
         <div class="headerFairPrice">
@@ -28,98 +28,113 @@
           <input class="checkDomainForm__input" type="text" name="domain" placeholder="example.ru" maxlength="37">
           <button class="checkDomainForm__btn">Проверить</button>
           <div class="checkDomainForm__result">
+            <div class = "checkDomainForm__result_textWrapper">
+              <span class="checkDomainForm__result_firstPhrase" >Проверь свободен ли домен и</span>
+              <span class="">
+                <a class='checkDomainForm__result_secondPhrase' href="#">зарегистрируй за 39₽</a>
+              </span>
+            </div>
           </div>
         </form>
         <div class="createAccountBtn">
           <a class="createAccountBtn__link" href="#">Создать аккаунт</a>
         </div>
         <div class="arrowBtn">
-          <a href="#jinoDomains"><img src="img/down.png" alt="arrowDown"></a>
+          <a href="#jinoDomainsAdvantages"><img src="img/down.png" alt="arrowDown"></a>
         </div>
       </div>
       <div class="circleBtnsWrapper">
-        <button class="circleBtnsWrapper__btn activeCircleBtn"></button>
-        <button class="circleBtnsWrapper__btn"></button>
-        <button class="circleBtnsWrapper__btn"></button>
+        <a class="circleBtnsWrapper__btn circleBtnsWrapper__btn_activeCircleBtn" href="#jinoDomains"></a>
+        <a class="circleBtnsWrapper__btn" href="#jinoDomainsAdvantages"></a>
+        <a class="circleBtnsWrapper__btn" href="#jinoDomainWhyJino"></a>
       </div>
     </header>
-    <section class="advantages">
+    <section id="jinoDomainsAdvantages" class="advantages">
       <div class="container">
-        <div id="jinoDomains" class="jinoDomains">
-          <span class="jinoDomains__jino">ДЖИНО</span>
-          <span class="jinoDomains__domains">домены</span>
+        <div class="jinoDomains">
+          <div><img class="jinoDomains__jino" src="img/JinoRed.png" alt="jinoLogoRed"></div>
+          <div class="jinoDomains__domains">домены</div>
         </div>
         <h5 class="advantages__register">Зарегистрировав у нас домен, вы получите</h5>
         <section class="advantages__section">
           <div class="advantages__list">
             <article class="advantages__list_article">
-              <a href="#">
+              <a class="advantages__list_link" href="#">
                 <img src="img/advantages/businesscard.svg" alt="">
-                <h6>Сайт-визитка</h6>
+                <h6 class="advantages__list_text">Сайт-визитка</h6>
               </a>
             </article>
             <article class="advantages__list_article">
-              <a href="#">
+              <a class="advantages__list_link" href="#">
                 <img src="img/advantages/dns.svg" alt="">
-                <h6>Поддержка DNS</h6>
+                <h6 class="advantages__list_text">Поддержка DNS</h6>
               </a>
             </article>
             <article class="advantages__list_article">
-              <a href="#">
+              <a class="advantages__list_link" href="#">
                 <img src="img/advantages/certificate.svg" alt="">
-                <h6>Сертификат о владении доменом</h6>
+                <h6 class="advantages__list_text">Сертификат о владении доменом</h6>
               </a>
             </article>
             <article class="advantages__list_article">
-              <a href="#">
+              <a class="advantages__list_link" href="#">
                 <img src="img/advantages/autorenewal.svg" alt="">
-                <h6>Автопродление</h6>
+                <h6 class="advantages__list_text">Автопродление</h6>
               </a>
             </article>
           </div>
-          <div id="topIconsInfo"></div>
+          <div class="iconsInfo">
+            <p id="IconsInfo" class="iconsInfo__text">
+              Для любого вашего домена, зарегистрированного на «Джино», вы можете в несколько кликов создать простую
+              страницу-визитку. Это удобно,<br>
+              если ваш основной сайт еще не готов, или если домен вам нужен только для почты. Вы можете разместить
+              здесь краткую информацию о себе<br>
+              или вашем бизнесе, ссылки на аккаунты в соцсетях и любые другие сайты. Создание и поддержка базового
+              варианта сайта-визитки абсолютно<br>
+              бесплатны.
+            </p>
+          </div>
           <div class="advantages__list">
             <article class="advantages__list_article">
-              <a href="#">
+              <a class="advantages__list_link" href="#">
                 <img src="img/advantages/cloud.svg" alt="">
-                <h6 class="icons">Облачное хранилище на 20ГБ</h6>
+                <h6 class="advantages__list_text">Облачное хранилище на 20ГБ</h6>
               </a>
             </article>
             <article class="advantages__list_article">
-              <a href="#">
+              <a class="advantages__list_link" href="#">
                 <img src="img/advantages/freessl.svg" alt="">
-                <h6>Бесплатный SSL-сертифиткат</h6>
+                <h6 class="advantages__list_text">Бесплатный SSL-сертифиткат</h6>
               </a>
             </article>
             <article class="advantages__list_article">
-              <a href="#"><img src="img/advantages/dnssec.svg" alt="">
-                <h6>DNSSEC в один клик</h6>
+              <a class="advantages__list_link" href="#"><img src="img/advantages/dnssec.svg" alt="">
+                <h6 class="advantages__list_text">DNSSEC в один клик</h6>
               </a>
             </article>
             <article class="advantages__list_article">
-              <a href="#">
+              <a class="advantages__list_link" href="#">
                 <img src="img/advantages/redirect.svg" alt="">
-                <h6>Перенаправление</h6>
+                <h6 class="advantages__list_text">Перенаправление</h6>
               </a>
             </article>
           </div>
-          <h6 id="bottomIconsInfo" class="icons"></h6>
         </section>
         <div class="createAccountBtn createAccountBtnMarginsAdvantagesSection">
           <a class="createAccountBtn__link" href="#">Создать аккаунт</a>
         </div>
       </div>
       <div class="circleBtnsWrapper">
-        <button class="circleBtnsWrapper__btn"></button>
-        <button class="circleBtnsWrapper__btn activeCircleBtn"></button>
-        <button class="circleBtnsWrapper__btn"></button>
+        <a class="circleBtnsWrapper__btn" href="#jinoDomains"></a>
+        <a class="circleBtnsWrapper__btn circleBtnsWrapper__btn_activeCircleBtn" href="#jinoDomainsAdvantages"></a>
+        <a class="circleBtnsWrapper__btn" href="#jinoDomainWhyJino"></a>
       </div>
     </section>
     <section class="whyJino">
       <div class="container">
-        <div class="jinoDomains">
-          <span class="jinoDomains__jino jinoColor">ДЖИНО</span>
-          <span class="jinoDomains__domains jinoColor">домены</span>
+        <div id="jinoDomainWhyJino" class="jinoDomains">
+          <div><img class="jinoDomains__jino" src="img/JinoWhite.png" alt="jinoLogoRed"></div>
+          <div class="jinoDomains__domains jinoDomains__domains_color">домены</div>
         </div>
         <div class="whyJino__why">
           Почему стоит выбирать Джино?
@@ -132,29 +147,36 @@
             и многое другое.<br>
           </h2>
         </div>
-        <div class="createAccountBtn createAccountBtnMarginsAdvantagesSection">
+        <div class="createAccountBtn createAccountBtnMarginsWhyJinoSection">
           <a class="createAccountBtn__link" href="#">Создать аккаунт</a>
         </div>
         <div class="whyJino__loyalty">
           <div class="whyJino__loyalty_left">
-            <p>
-              Вы получите 1000 баллов в системе лояльности Джино.Плюсы,<br>
-              зарегистрировавшись в течении 24 часов после посещения данной страницы
+            <p class="loyaltyPointsText">
+              Вы получите <b>1000 баллов</b> в системе лояльности
+              <span class="loyaltyPointsText__underline">Джино.Плюсы</span>,<br>
+              зарегистрировавшись в течении <b>24 часов</b> после посещения данной страницы
             </p>
           </div>
-          <div class="whyJino__loyalty_right"></div>
+          <div class="whyJino__loyalty_middle"></div>
+          <div class="whyJino__loyalty_right">
+            <p class="loyaltyPoints">
+              1000<img class="loyaltyPoints__plusImage" src="img/bold.png" alt="plus">
+            </p>
+          </div>
         </div>
+        <footer>
+          © «<u>Джино</u>», 2003–2017. «Джино» является зарегистрированным товарным знаком.
+          Лицензия на телематические услуги связи № 97495 от 09.03.2012. <u>Правовая информация</u>.
+        </footer>
       </div>
       <div class="circleBtnsWrapper">
-        <button class="circleBtnsWrapper__btn"></button>
-        <button class="circleBtnsWrapper__btn"></button>
-        <button class="circleBtnsWrapper__btn activeCircleBtn"></button>
+        <a class="circleBtnsWrapper__btn" href="#jinoDomains"></a>
+        <a class="circleBtnsWrapper__btn" href="#jinoDomainsAdvantages"></a>
+        <a class="circleBtnsWrapper__btn circleBtnsWrapper__btn_activeCircleBtn" href="#jinoDomainWhyJino"></a>
       </div>
     </section>
   </div>
-  <footer>
-
-  </footer>
 </div>
 </body>
 </html>
