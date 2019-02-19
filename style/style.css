@@ -338,18 +338,30 @@ body {
   padding: 27px 40px;
 }
 
-.iconsInfo::before {
+.pointer {
   position: absolute;
-  content: "";
   display: block;
   width: 10px;
   height: 10px;
   top: -6px;
-  left: 170px;
+  left: 15%;
   background-color: #f7f7f7;
   border-top: 1px solid rgba(95, 96, 98, 0.5);
   border-left: 1px solid rgba(95, 96, 98, 0.5);
   transform: rotate(45deg);
+}
+
+.pointerUnder {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  bottom: -6px;
+  left: 170px;
+  background-color: #f7f7f7;
+  border-top: 1px solid rgba(95, 96, 98, 0.5);
+  border-left: 1px solid rgba(95, 96, 98, 0.5);
+  transform: rotate(225deg);
 }
 
 .createAccountBtnMarginsWhyJinoSection {
@@ -408,10 +420,6 @@ body {
 
   .createAccountBtnMarginsAdvantagesSection {
     margin-top: 20px;
-  }
-
-  .iconsInfo::before {
-    left: 90px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -474,10 +482,6 @@ body {
 
   .createAccountBtnMarginsAdvantagesSection {
     margin-top: 20px;
-  }
-
-  .iconsInfo::before {
-    left: 115px;
   }
 }
 @media (min-height: 620px) and (max-height: 800px) {
