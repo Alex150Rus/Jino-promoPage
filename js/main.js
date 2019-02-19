@@ -1,0 +1,1 @@
+const advantagesDescController =new AdvantagesDescriptionController();
